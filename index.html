@@ -11,9 +11,46 @@
  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
  crossorigin=""></script>
+ <link rel="stylesheet"  type="text/css" href="main.css">
 </head>
 <body>
-    <div id ="mapid" style="width: 80%; height: 580px"></div>
+    <div class="content">
+  <img src="maps.png" alt="maps">
+  </div>
+  <div class="text">
+    <h1>Dynamic Maps</h1>
+  </div>
+  <div class="table">
+    <table>
+        <tr>
+            <th> Person Name</th>
+            <th>City</th>
+            <th>Co-ordinate</th>
+        </tr>
+        <tr class="tr" onclick=testFunction1()>
+            <td>Shamim</td>
+            <td>Dhaka</td>
+            <td>54.856,-110.18795</td>
+        </tr>
+        <tr class="tableRow" onclick=testFunction2()>
+            <td>Shakil</td>
+            <td>Chittagong</td>
+            <td>40.568,-78.94285</td>
+        </tr>
+        <tr class="tableRow" onclick=testFunction3()>
+            <td>Sumon</td>
+            <td>Dhaka</td>
+            <td>65.856,-130.18795</td>
+        </tr>
+        <tr class="tableRow" onclick=testFunction4()>
+            <td>Tuhin</td>
+            <td>Rajshahi</td>
+            <td>90.856,-200.18795</td>
+        </tr>
+    </table>
+  </div>
+    <div id ="mapid" style="width: 100%; height: 580px">
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
