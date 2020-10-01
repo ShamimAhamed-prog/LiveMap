@@ -17,3 +17,24 @@ function testFunction1(){
    marker.bindPopup("Shamim").openPopup();
 
 }
+function testFunction2(){
+   layerGroup.clearLayers();
+   mymap.closePopup();
+   marker = L.marker([40.568, -78.94285]).addTo(layerGroup);
+   marker.bindPopup("Shakil").openPopup();
+
+}
+function testFunction3(){
+   layerGroup.clearLayers();
+   mymap.closePopup();
+   marker = L.marker([65.856, -130.18795]).addTo(layerGroup);
+   marker.bindPopup("Sumon").openPopup();
+
+}
+function testFunction4(){
+   layerGroup.clearLayers();
+   mymap.closePopup();
+   marker = L.marker([90.856, -200.18795]).addTo(layerGroup);
+   marker.bindPopup("Tuhin").openPopup();
+
+}
